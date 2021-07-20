@@ -24,7 +24,7 @@ const Homework = () => {
             </Essay>
 
             <Essay
-            number={ 2 }
+            number={ 3 }
             question='What are Single Page Apps (SPAs)? How do they differ from traditional multi-page Web Sites?'
             >
             
