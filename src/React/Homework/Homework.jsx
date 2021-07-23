@@ -1,9 +1,12 @@
 import React from 'react'; 
 import Essay from './Essay';
+import SunAndMoon from '../SunAndMoon/SunAndMoon';
 
 const Homework = () => {
     return (
-        <div>Homework
+        <div>
+            <SunAndMoon />
+            <h2>HOMEWORK</h2>
             <Essay
             number={ 1 }
             question='What is the difference between Git, Github and Heroku?'
