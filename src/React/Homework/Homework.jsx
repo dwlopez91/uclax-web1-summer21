@@ -27,8 +27,9 @@ const Homework = () => {
             number={ 3 }
             question='What are Single Page Apps (SPAs)? How do they differ from traditional multi-page Web Sites?'
             >
+            <p>Single page apps are loaded one time through the browser.</p>
+            <p>They differ from traditional mp websites in that they make changes through APIs and JavaScript and only what is needed. </p>
             
-            My Answer
 
             </Essay>
         </div>
