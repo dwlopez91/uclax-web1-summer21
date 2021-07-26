@@ -35,6 +35,15 @@ const Homework = () => {
             
 
             </Essay>
+            <Essay
+            number={ 4 }
+            question='What is the difference between Web Designer, Front End Developer and Back End Developer?'
+            >
+            <p>A web designer works with some code but is mostly concerned with visual aspects such as typography, color coordination, and UX/UI.</p>
+            <p>A front end developer works with HTML, CSS and JS to build the public facing side of websites and applications. </p>
+            <p>Back end developers handle databases, server and networking parts of websites.</p>
+
+            </Essay>
         </div>
     );
 }
