@@ -55,9 +55,19 @@ const Homework = () => {
             number={ 5 }
             question='Distinguish the difference between Site Relative, Document Relative, and Absolute Paths.'
             >
-                <li>Site Relative: uses the current file/folder name only. Can be accesses while on the website but not outside of it. </li>
-                <li>Document Relative:  only includes the address of the current file; you wouldn't be able to access outside its specific folder.</li>
-                <li>Absolute Path: includes the whole address including site domain and complete file path. Can be accessed anywhere.</li>
+                <li>Site Relative: path is devised from the root of the site instead of document. </li>
+                <li>Document Relative:  paths locating specific files from current working directory.</li>
+                <li>Absolute Path: includes the whole address including site domain and complete file path. Can be accessed anywhere. Fully resolved URL. </li>
+
+            </Essay>
+            <Essay
+            number={ 6 }
+            question='What is the difference between jpg, gif, png and SVG images?'
+            >
+                <li>GIF: Graphic Interchange format; bitmap - for things like animation and logos.</li>
+                <li>SVG: scalable vector graphics; Logos, line art, icons - vector not bitmap so can scaled with no loss of quality.</li>
+                <li>PNG: portable graphics group; True alpha transparency; supports millions of colors. Lossless compression.</li>
+                <li>JPG: joint photographic exports group, bitmap, propietary lossy compression, millions of colors allowed.</li>
 
             </Essay>
         </div>

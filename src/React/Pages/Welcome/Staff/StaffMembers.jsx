@@ -8,8 +8,6 @@ import { staffData } from './staffData.js';
 
 const StaffMembers = () => {
 
-    console.log('staffData', staffData);
-
     return (
         <StaffMembersStyled className='StaffMembers'>
             {
