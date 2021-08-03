@@ -5,11 +5,14 @@ import Slideshow from './Slideshow/Slideshow.jsx';
 import Tabbed from './Tabbed/Tabbed.jsx';
 import Staff from './Staff/Staff.jsx';
 
+import Playground from '../../Components/Lightbox/Playground.jsx';
+
 const Welcome = () => {
 
     return (
         <WelcomeStyled className='Welcome'>
             <h1>Welcome Page</h1>
+            <Playground />
             <Slideshow />
             <Tabbed />
             <Staff />
