@@ -42,9 +42,9 @@ const MainStyled = styled.main`
     background-color: tan;
     padding: 10px; 
 
-    div {
+    /* div {
         border: solid 2px white; 
         padding: 20px;
-    }
+    } */
 
 `;
