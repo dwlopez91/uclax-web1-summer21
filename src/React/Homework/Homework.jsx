@@ -78,6 +78,7 @@ const Homework = () => {
                 <li>Business Analyst: in IT, identifies tech solutions that increase production and are cost effective. </li>
                 <li>Scrum Master: in charge of keeping a team on task and aligned with Agile values/principles during a sprint. </li>
                 <li>UX Designer: uses market research, data from users, and industry knowledge to design products, websites, etc. </li>
+                <li>Web Developer: Designs architecture of websites, including functions, features and security.</li>
                 <li>Quality Assurance Tester: examine products to determine whether or not they function correctly.</li>
                 <li>DevOps: combination of processes/practices from software development and IT operation in cycles</li>
 

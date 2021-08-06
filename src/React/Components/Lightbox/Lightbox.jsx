@@ -1,20 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
+
 
 import Dark from './Dark.jsx';
 
 
-const LightBox = () => {
+const Lightbox = ({children, LightboxContent}) => {
+
+    const [showLight, showLightUpdate] = useState(false);
+
+    const toggleShowLight = () => {
+        showLightUpdate(!showLight);
+    }
 
     return (
-        <LightBoxStyled className='LightBox'>
-            <Dark /> 
-        </LightBoxStyled>
+        <LightboxStyled className='Lightbox' onClick={ toggleShowLight }>
+            {children}
+            {
+                showLight && 
+                <Dark showLightUpdate={ showLightUpdate}>
+                    <LightboxContent />
+                </Dark> 
+            }
+           
+        </LightboxStyled>
     );
 }
 
-export default LightBox;
+export default Lightbox;
 
-const LightBoxStyled = styled.div`
+const LightboxStyled = styled.div`
     
 `;

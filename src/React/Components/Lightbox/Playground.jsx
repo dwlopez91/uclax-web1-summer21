@@ -1,14 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import LightBox from './Lightbox.jsx';
+import Lightbox from 'React/Components/Lightbox/Lightbox';
+import { isMemberName } from 'typescript';
 
 const Playground = () => {
+
+    const LightboxContent = () => {
+        return (
+            <div>Content to Put in Lightbox. </div>
+          
+        )
+    }
 
     return (
         <PlaygroundStyled className='Playground'>
             <h3>Playground</h3> 
-            <LightBox />
+            <Lightbox LightboxContent={ LightboxContent }>
+                Content
+            </Lightbox>
         </PlaygroundStyled>
     );
 }

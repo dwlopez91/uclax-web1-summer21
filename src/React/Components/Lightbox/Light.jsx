@@ -1,11 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Light = () => {
+import CloseButton from '../Buttons/CloseButton.jsx';
+
+const Light = ({showLightUpdate, children}) => {
+
+    const handleClose = () => {
+        showLightUpdate(false);
+    }
+
+    const handleClick = (event) => {
+        event.stopPropogation();
+    } 
 
     return (
         <LightStyled className='Light'>
-            Light 
+            <CloseButton onClick={ handleClose } />
+            {children}
+             
         </LightStyled>
     );
 }
@@ -25,5 +37,12 @@ const LightStyled = styled.div`
     top: 50%; 
 
     transform: translate(-50%, -50%);
+
+    .CloseButton {
+        position: absolute;
+        right: -10px; 
+        top: -10px;
+
+    }
     
 `;
