@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Lightbox from 'React/Components/Lightbox/Lightbox';
-import { isMemberName } from 'typescript';
 
 const Playground = () => {
 
