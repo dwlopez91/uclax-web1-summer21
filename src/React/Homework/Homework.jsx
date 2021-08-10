@@ -83,6 +83,18 @@ const Homework = () => {
                 <li>DevOps: combination of processes/practices from software development and IT operation in cycles</li>
 
             </Essay>
+            <Essay
+            number={ 8 }
+            question='What is considered the right size for an image or video asset?'
+            >
+               <li>It depends on the container size and the use case for the image or video. You want to choose lower file sizes (quality).</li>
+               <li>Default video to 16x9</li>
+               <li>Hero images should be 1500x2500px</li>
+               <li>Video length should be 30-40 seconds</li>
+               <li>25-30MB max</li>
+
+            </Essay>
+
         </div>
     );
 }
