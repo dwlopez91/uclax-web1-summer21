@@ -94,6 +94,15 @@ const Homework = () => {
                <li>25-30MB max</li>
 
             </Essay>
+            <Essay
+            number={ 9 }
+            question='WWhat does it mean for a company to be Agile? What are the pros and cons of being agile?'
+            >
+            <li>Agile: a method for software development where a team works in small increments continuously, rather than publishing one final product.</li>
+            <li>Agile brings everyone to the process so it moves much faster and with less stalls. It also allows for immediate feedback to be implemented.</li>
+            <li>The drawbacks to Agile would be end user experience is constantly changing - it takes time for people to adapt. Documentation is also commonly lost.</li>
+
+            </Essay>
 
         </div>
     );
