@@ -3,14 +3,20 @@ import styled from 'styled-components';
 
 import Category from './Category';
 
-const Categories = () => {
+const Categories = ({ categories, curCat, curCatUpdate }) => {
 
     return (
         <CategoriesStyled className='Categories'>
-            <Category /> 
-            <Category /> 
-            <Category /> 
-            <Category /> 
+           { 
+                categories.map((cat, idx) => {
+                    return <Category 
+                                key={ idx } 
+                                cat={ cat } 
+                                curCat={ curCat }
+                                curCatUpdate={ curCatUpdate }
+                            />
+                })
+           }
         </CategoriesStyled>
     );
 }

@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { servicesData } from '../servicesData';
 
-const Item = () => {
+const Item = ({ service }) => {
 
     return (
         <ItemStyled className='Item'>
-            <img src="/img/Services/service-1.jpg" alt="whatever" /> 
+            <img src={ service.image } alt={ service.title } /> 
+            <h3>{ service.title }</h3>
         </ItemStyled>
     );
 }
