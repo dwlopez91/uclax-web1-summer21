@@ -3,8 +3,12 @@ import styled from 'styled-components';
 
 import Lightbox from 'React/Components/Lightbox/Lightbox';
 
+import { useMediaQuery } from 'common/mediaQueries/useMediaQuery';
+
 
 const StaffMember = ({member}) => {
+
+    const { media } =useMediaQuery();
 
     const LightboxContent = () => {
         return (
@@ -14,10 +18,12 @@ const StaffMember = ({member}) => {
             </div>
         )
     }
+    
+    const width = (media.mdUp) ? '400px' : '200px';
 
     return (
         <StaffMemberStyled className='StaffMember'>
-            <Lightbox LightboxContent={ LightboxContent }>
+            <Lightbox LightboxContent={ LightboxContent } width={ width}>
                  <img src={member.image} alt={ member.name} />        
                 <h3>{member.name}</h3>
             </Lightbox>

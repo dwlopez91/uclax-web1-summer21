@@ -18,7 +18,7 @@ const Item = ({ service }) => {
         }
         return (
             <ItemStyled className='Item'>
-              <Lightbox LightboxContent={ LightboxContent }>
+              <Lightbox LightboxContent={ LightboxContent } width={ '400px' }>
                 <img src={ service.image } alt={ service.title } /> 
                 <h3>{ service.title }</h3>
                 {/* <p>{ service.description }</p>

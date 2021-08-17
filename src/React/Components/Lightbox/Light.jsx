@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import styled from 'styled-components';
 
 import CloseButton from '../Buttons/CloseButton.jsx';
 
-const Light = ({showLightUpdate, children}) => {
+const Light = ({showLightUpdate, children, width}) => {
+
 
     const handleClose = () => {
         showLightUpdate(false);
     }
 
     const handleClick = (event) => {
-        event.stopPropogation();
+        event.stopPropagation();
     } 
 
     return (
-        <LightStyled className='Light'>
+        <LightStyled className='Light' onClick={ handleClick } w={ width }>
             <CloseButton onClick={ handleClose } />
-            {children}
+            { useMemo(() => children, [width]) }
              
         </LightStyled>
     );
@@ -30,8 +31,13 @@ const LightStyled = styled.div`
 
     background-color: #fff;
 
-    width: 200px; 
-    height: 300px; 
+    width: ${
+        ({w}) => {
+            return w;
+        }
+    };
+
+    height: auto;
 
     left: 50%; 
     top: 50%; 

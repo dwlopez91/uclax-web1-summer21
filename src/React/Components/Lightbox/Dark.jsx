@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Light from './Light.jsx';
 
-const Dark = ({showLightUpdate, children}) => {
+const Dark = ({showLightUpdate, children, width}) => {
 
     useEffect(() => {
         const handleOnKeyDown = (event) => {
@@ -23,7 +23,7 @@ const Dark = ({showLightUpdate, children}) => {
 
     return (
         <DarkStyled className='Dark'>
-            <Light showLightUpdate={ showLightUpdate }>
+            <Light showLightUpdate={ showLightUpdate } width={width}>
                 { children }
             </Light>
         </DarkStyled>
@@ -34,6 +34,9 @@ export default Dark;
 
 const DarkStyled = styled.div`
     position: fixed; 
+
+    z-index: 1000;
+    
     background-color: rgba(0, 0, 0, 0.722);
     
     left: 0px; 
