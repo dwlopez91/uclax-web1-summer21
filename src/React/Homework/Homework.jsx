@@ -96,12 +96,21 @@ const Homework = () => {
             </Essay>
             <Essay
             number={ 9 }
-            question='WWhat does it mean for a company to be Agile? What are the pros and cons of being agile?'
+            question='What does it mean for a company to be Agile? What are the pros and cons of being agile?'
             >
             <li>Agile: a method for software development where a team works in small increments continuously, rather than publishing one final product.</li>
             <li>Agile brings everyone to the process so it moves much faster and with less stalls. It also allows for immediate feedback to be implemented.</li>
             <li>The drawbacks to Agile would be end user experience is constantly changing - it takes time for people to adapt. Documentation is also commonly lost.</li>
 
+            </Essay>
+            <Essay
+            number={ 10 }
+            question='What are testing environments? What is the difference between Local, Dev, QA and Production?'            >
+            <li>Testing environments are servers that run specific tests to make sure code is working as intended. There will often be multiple environemnts to test different functions.</li>
+            <li>Local: one developer is working on the code and testing.</li>
+            <li>Dev: Multiple developers are working together for writing code and may be testing.</li>
+            <li>QA: different tests are run to try and "break" the code in a testing environment.</li>
+            <li>Production: live deployment. Tests and bug fixes are run while the app is in use.</li>
             </Essay>
 
         </div>
