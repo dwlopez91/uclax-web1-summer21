@@ -92,8 +92,8 @@ const Homework = () => {
                <li>Hero images should be 1500x2500px</li>
                <li>Video length should be 30-40 seconds</li>
                <li>25-30MB max</li>
-
             </Essay>
+           
             <Essay
             number={ 9 }
             question='What does it mean for a company to be Agile? What are the pros and cons of being agile?'
@@ -101,8 +101,8 @@ const Homework = () => {
             <li>Agile: a method for software development where a team works in small increments continuously, rather than publishing one final product.</li>
             <li>Agile brings everyone to the process so it moves much faster and with less stalls. It also allows for immediate feedback to be implemented.</li>
             <li>The drawbacks to Agile would be end user experience is constantly changing - it takes time for people to adapt. Documentation is also commonly lost.</li>
-
             </Essay>
+            
             <Essay
             number={ 10 }
             question='What are testing environments? What is the difference between Local, Dev, QA and Production?'            >
@@ -112,7 +112,15 @@ const Homework = () => {
             <li>QA: different tests are run to try and "break" the code in a testing environment.</li>
             <li>Production: live deployment. Tests and bug fixes are run while the app is in use.</li>
             </Essay>
-
+            
+            <Essay
+            number={ 10 }
+            question='When are web images considered part of the content (HTML) as opposed to part of the appearance (CSS)?'            >
+            <p>Web images are considered part of the HTML when they serve a purpose - this would be important for accessibility screen readers. 
+               An image is considered part of the CSS when it is for decorative purposes only, e.g. background images. These would not be read by screen readers. 
+            </p>
+            </Essay>
+            
         </div>
     );
 }
