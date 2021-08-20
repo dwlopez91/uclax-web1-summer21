@@ -87,13 +87,13 @@ const Homework = () => {
             number={ 8 }
             question='What is considered the right size for an image or video asset?'
             >
-               <li>It depends on the container size and the use case for the image or video. You want to choose lower file sizes (quality).</li>
-               <li>Default video to 16x9</li>
-               <li>Hero images should be 1500x2500px</li>
-               <li>Video length should be 30-40 seconds</li>
-               <li>25-30MB max</li>
+            <li>It depends on the container size and the use case for the image or video. You want to choose lower file sizes (quality).</li>
+            <li>Default video to 16x9</li>
+            <li>Hero images should be 1500x2500px</li>
+            <li>Video length should be 30-40 seconds</li>
+            <li>25-30MB max</li>
             </Essay>
-           
+        
             <Essay
             number={ 9 }
             question='What does it mean for a company to be Agile? What are the pros and cons of being agile?'
@@ -114,10 +114,11 @@ const Homework = () => {
             </Essay>
             
             <Essay
-            number={ 10 }
-            question='When are web images considered part of the content (HTML) as opposed to part of the appearance (CSS)?'            >
+            number={ 11 }
+            question='When are web images considered part of the content (HTML) as opposed to part of the appearance (CSS)?'            
+            >
             <p>Web images are considered part of the HTML when they serve a purpose - this would be important for accessibility screen readers. 
-               An image is considered part of the CSS when it is for decorative purposes only, e.g. background images. These would not be read by screen readers. 
+            An image is considered part of the CSS when it is for decorative purposes only, e.g. background images. These would not be read by screen readers. 
             </p>
             </Essay>
             

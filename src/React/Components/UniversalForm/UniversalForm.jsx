@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import Form from './Form/Form.jsx';
-import FormControl from './Form/FormControl.jsx';
-import FormGroup from './Form/FormGroup.jsx';
-import FormLabel from './Form/FormLabel.jsx';
+import FormControl from './Form/FormGroup/FormControl.jsx';
+import FormGroup from './Form/FormGroup/FormGroup.jsx';
+import FormLabel from './Form/FormGroup/FormLabel.jsx';
 
 
 const UniversalForm = () => {
@@ -20,13 +20,7 @@ const UniversalForm = () => {
     return (
         <UniversalFormStyled className='UniversalForm'>
             <Form>
-                <FormGroup>
-                    <FormLabel />
-                    <FormControl 
-                        inputName={ inputName }
-                        handleUpdate={ handleUpdate }
-                    /> 
-                </FormGroup>
+                <FormGroup inputName={ inputName } handleUpdate={ handleUpdate } /> 
             </Form>
         </UniversalFormStyled>
     );
