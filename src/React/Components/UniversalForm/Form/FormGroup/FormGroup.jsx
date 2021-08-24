@@ -4,15 +4,12 @@ import styled from 'styled-components';
 import FormLabel from './FormLabel';
 import FormControl from './FormControl';
 
-const FormGroup = ({inputName, handleUpdate}) => {
+const FormGroup = () => {
 
     return (
         <FormGroupStyled className='FormGroup'>
             <FormLabel />
-            <FormControl 
-                inputName={ inputName }
-                handleUpdate={ handleUpdate }
-            /> 
+            <FormControl /> 
         </FormGroupStyled>
     );
 }

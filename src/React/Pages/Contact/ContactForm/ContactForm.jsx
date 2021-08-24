@@ -4,9 +4,15 @@ import styled from 'styled-components';
 
 const ContactForm = () => {
 
+    const defaultFormData = {
+        fullname: 'dummy',
+        // email: '',
+        // message: '',
+    }
+
     return (
         <ContactFormStyled className='ContactForm'>
-            <UniversalForm /> 
+            <UniversalForm  defaultFormData={ defaultFormData }/> 
         </ContactFormStyled>
     );
 }

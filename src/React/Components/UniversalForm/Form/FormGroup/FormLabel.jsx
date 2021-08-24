@@ -5,7 +5,7 @@ const FormLabel = () => {
 
     return (
         <FormLabelStyled className='FormLabel'>
-            FormLabel 
+            First Name 
         </FormLabelStyled>
     );
 }

@@ -121,6 +121,14 @@ const Homework = () => {
             An image is considered part of the CSS when it is for decorative purposes only, e.g. background images. These would not be read by screen readers. 
             </p>
             </Essay>
+            <Essay
+            number={ 12 }
+            question="What is the difference between ID's, Classes and Tags? How does Specificity play a role in the selection of HTML elements (both in CSS and JS)?"            
+            >
+                <li>ID's are unique, meaning an ID can only have one value. Referencing an ID in CSS or JS only affects the 1 value.</li>
+                <li>Classes can have multiple values, or more than 1 item can belong to the same class. Referencing a class in CSS or JS affects all the elements that have that class.</li>
+                <li>Tags go around HTML elements such as {"<p></p>"}</li>
+            </Essay>
             
         </div>
     );
