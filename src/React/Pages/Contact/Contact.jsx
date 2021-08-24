@@ -41,7 +41,7 @@ const ContactStyled = styled.div`
       }
     }
 
-
+/* 
     background-color: pink;
 
     @media (min-width: 800px) {
@@ -63,5 +63,5 @@ const ContactStyled = styled.div`
     }
 
 
-    
+     */
 `;

@@ -1,22 +1,20 @@
-import { update } from 'lodash';
+import { update } from 'react';
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 
 import Context from '../../Context/index.js';
 import { updateControl } from '../../Context/actions.js';
 
-const Input = ({control}) => {
+const Textarea = ({control}) => {
     const{ dispatch, state} = useContext(Context);
-
-    // const {fullname} = state;
 
     const handleUpdate = (e) => {
         updateControl(control.id, e.target.value, dispatch, state);
     }
 
     return (
-        <InputStyled 
-            className='Input'
+        <TextareaStyled 
+            className='Textarea'
             type={ control.type }
             id={ control.id }
             value={ control.value }
@@ -25,10 +23,11 @@ const Input = ({control}) => {
     );
 }
 
-export default Input;
+export default Textarea;
 
-const InputStyled = styled.input`
+const TextareaStyled = styled.textarea`
     width: 100%; 
+    height: 200px;
     font-size: 20px;
     padding: 10px;
     border: solid 2px gray;
