@@ -121,6 +121,7 @@ const Homework = () => {
             An image is considered part of the CSS when it is for decorative purposes only, e.g. background images. These would not be read by screen readers. 
             </p>
             </Essay>
+        
             <Essay
             number={ 12 }
             question="What is the difference between ID's, Classes and Tags? How does Specificity play a role in the selection of HTML elements (both in CSS and JS)?"            
@@ -128,6 +129,32 @@ const Homework = () => {
                 <li>ID's are unique, meaning an ID can only have one value. Referencing an ID in CSS or JS only affects the 1 value.</li>
                 <li>Classes can have multiple values, or more than 1 item can belong to the same class. Referencing a class in CSS or JS affects all the elements that have that class.</li>
                 <li>Tags go around HTML elements such as {"<p></p>"}</li>
+            </Essay>
+
+            <Essay
+            number={ 13 }
+            question="What is a CSS Preprocessor? What are some examples? In React, what are styled components? How do Styled Components violate separation of concerns?"            
+            >
+                <li>A CSS preprocessor is a set of tools that allows for functinoality/nesting in CSS. It has it's own syntax that is then compiled for browswers to interpret. Some examples are Sass, Less, and Stylus.</li>
+                <li>Styled components are JS components that contain CSS styling. They violate separation of concern, technically, by grouping HTML, CSS and JS in the same location.</li>
+            </Essay>
+
+            <Essay
+            number={ 14 }
+            question="Final Project"            
+            >
+                <li> <b>Who is the client?</b> I will be making a website for my parents' business. They own a small trash company.</li>  
+                <li><b>What is it's purpose?</b> To showcase the different services of the company.</li> 
+                <li> <b>Why did you choose this subject?</b> I chose this subject because my parents need an updated website for their business.</li>  
+            </Essay>
+
+            <Essay
+            number={ 14 }
+            question="What is the difference between Web Hosts, Domains, and FTP?"            
+            >
+                <li> Web hosts are the physical locations for websites - where they live on the servers.</li>  
+                <li>Domains are like the addresses for websites; the URL to get to a site.</li> 
+                <li>FTP {'(File Transfer Protocol)'}is a method for loading info to a website.</li>  
             </Essay>
             
         </div>

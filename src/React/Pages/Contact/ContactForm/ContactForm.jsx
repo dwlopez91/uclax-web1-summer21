@@ -6,24 +6,45 @@ import styled from 'styled-components';
 const ContactForm = () => {
 
     const defaultFormData = {
+        apiUrl: '/email/send',
+        hasSubmitted: false,
+        request: {},
+        response: {},
+        message: '',
+        
         controls: [
             {
                 id: 'fullName', 
                 label: 'Full Name',
                 value: '',
                 type: 'text',
+                validation: {
+                    isValid: true,
+                    rules: ['required'],
+                    message: '',
+                }
             },
             {
                 id: 'email', 
                 label: 'Email',
                 value: '',
                 type: 'text',
+                validation: {
+                    isValid: true,
+                    rules: ['required', 'email'],
+                    message: '',
+                }
             },
             {
                 id: 'message', 
                 label: 'Message',
                 value: '',
                 type: 'textarea',
+                validation: {
+                    isValid: true,
+                    rules: ['required'],
+                    message: '',
+                }
             }
         ]
     
