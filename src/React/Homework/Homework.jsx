@@ -149,12 +149,20 @@ const Homework = () => {
             </Essay>
 
             <Essay
-            number={ 14 }
+            number={ 15 }
             question="What is the difference between Web Hosts, Domains, and FTP?"            
             >
                 <li> Web hosts are the physical locations for websites - where they live on the servers.</li>  
                 <li>Domains are like the addresses for websites; the URL to get to a site.</li> 
                 <li>FTP {'(File Transfer Protocol)'}is a method for loading info to a website.</li>  
+            </Essay>
+
+            <Essay
+            number={ 16 }
+            question="What is a Package Manager? How does it play a role in software development?"            
+            >
+                <li>Package Managers take care of the installation, updating, and version control of "premade" software packages.</li>  
+                <li>The role in software development is to keeping the package up to date when the user commands it. Sometimes you do not want to update versions for consistency across teams a package can be "locked" in a certain version.</li> 
             </Essay>
             
         </div>
