@@ -14,7 +14,7 @@ const Container = () => {
 
     return (
         <ContainerStyled className='Container'>
-            <p>{ curCat }</p>
+            <h3>{ curCat }</h3>
             <Categories 
                 categories={ categories } 
                 curCat={ curCat }

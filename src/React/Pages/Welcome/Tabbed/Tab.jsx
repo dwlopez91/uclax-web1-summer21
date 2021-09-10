@@ -24,17 +24,18 @@ const TabStyled = styled.div`
 
     width: 150px; 
     text-align: center; 
-    color: white; 
+    color: whitesmoke; 
 
     cursor: white;
 
     margin-right: 5px;
     border-radius: 15px 15px 0px 0px;
 
-    background-color: #004646; 
+    background-color: #a7c99b; 
 
     &.chosen {
-        background-color: teal;
+        background-color: #bee5b0;
+        color: gray;
     }
 
 `;

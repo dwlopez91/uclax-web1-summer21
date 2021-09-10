@@ -22,7 +22,7 @@ const Lightbox = ({children, LightboxContent, width='200px'}) => {
                     <LightboxContent />
                 </Dark> 
             }
-           
+        
         </LightboxStyled>
     );
 }

@@ -5,7 +5,7 @@ const Map = () => {
 
     return (
         <MapStyled className='Map'>
-            Map 
+            {/* Map  */}
         </MapStyled>
     );
 }

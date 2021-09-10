@@ -20,8 +20,10 @@ export default Content;
 
 const ContentStyled = styled.div`
     padding: 20px; 
-    background-color: teal; 
-    min-height: 200px;     
+    background-color: #bee5b0; 
+    min-height: 200px;
+    color: gray;
+    font-size: 25px;
 
     display: flex; 
 

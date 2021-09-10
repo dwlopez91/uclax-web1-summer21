@@ -5,7 +5,7 @@ const Info = () => {
 
     return (
         <InfoStyled className='Info'>
-            Info 
+            {/* Info  */}
         </InfoStyled>
     );
 }

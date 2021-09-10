@@ -19,14 +19,16 @@ const Category = ({cat, curCat, curCatUpdate}) => {
 export default Category;
 
 const CategoryStyled = styled.button`
-    background-color: teal;
-    color: white;
+    background-color: #cabd9c;
+    color: #4d4848;
     border: none;
     padding: 10px 20px;
     margin: 0px 10px;
 
     &.chosen {
-        background-color: blue;
+        background-color: goldenrod;
+        color: white;
+
     }
     
 `;

@@ -13,7 +13,6 @@ import Homework from '../Homework/Homework.jsx';
 
 const Main = () => {
     return <MainStyled> 
-                <h1>My Main </h1>
                 <Switch>
                     <Route path='/services'>
                         <Services />
@@ -24,7 +23,7 @@ const Main = () => {
                     <Route path='/login'>
                         <Login />
                     </Route>
-                    <Route path='/homework'>
+                    <Route path='/education'>
                         <Homework />
                     </Route>
                     <Route path='/' exact >
@@ -33,13 +32,13 @@ const Main = () => {
 
                 </Switch>
 
-           </MainStyled>
+            </MainStyled>
 }
 
 export default Main;
 
 const MainStyled = styled.main`
-    background-color: tan;
+    background-color: whitesmoke;
     padding: 10px; 
 
     /* div {

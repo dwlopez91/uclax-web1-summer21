@@ -1,19 +1,26 @@
 import React from 'react'; 
-import Essay from './Essay';
-import SunAndMoon from '../SunAndMoon/SunAndMoon';
+// import Essay from './Essay';
+// import SunAndMoon from '../SunAndMoon/SunAndMoon';
+import Youtube from './Youtube';
+import styled from 'styled-components';
+
 
 import { useMediaQuery } from 'common/mediaQueries/useMediaQuery.js';
 
 const Homework = () => {
 
-    const { media } = useMediaQuery();
+    // const { media } = useMediaQuery();
 
-    console.log('media', media);
+    // console.log('media', media);
 
     return (
-        <div>
-            { media.mdUp && <SunAndMoon /> }
-            <h2>HOMEWORK</h2>
+        <HomeworkStyled className="Homework">
+
+            <h2>Learn about organics recycling and how you can make a difference!</h2>
+
+            {  <Youtube /> }
+
+            {/* <h2>HOMEWORK</h2>
             <Essay
             number={ 1 }
             question='What is the difference between Git, Github and Heroku?'
@@ -140,33 +147,27 @@ const Homework = () => {
             </Essay>
 
             <Essay
-            number={ 14 }
-            question="Final Project"            
+            number={ 13 }
+            question="What is a CSS Preprocessor? What are some examples? In React, what are styled components? How do Styled Components violate separation of concerns?"            
             >
-                <li> <b>Who is the client?</b> I will be making a website for my parents' business. They own a small trash company.</li>  
-                <li><b>What is it's purpose?</b> To showcase the different services of the company.</li> 
-                <li> <b>Why did you choose this subject?</b> I chose this subject because my parents need an updated website for their business.</li>  
-            </Essay>
+                <li>Who is the client?</li>  
+                <li>What is it's purpose?</li> 
+                <li> Why did you choose this subject?</li>  
+            </Essay> */}
 
-            <Essay
-            number={ 15 }
-            question="What is the difference between Web Hosts, Domains, and FTP?"            
-            >
-                <li> Web hosts are the physical locations for websites - where they live on the servers.</li>  
-                <li>Domains are like the addresses for websites; the URL to get to a site.</li> 
-                <li>FTP {'(File Transfer Protocol)'}is a method for loading info to a website.</li>  
-            </Essay>
-
-            <Essay
-            number={ 16 }
-            question="What is a Package Manager? How does it play a role in software development?"            
-            >
-                <li>Package Managers take care of the installation, updating, and version control of "premade" software packages.</li>  
-                <li>The role in software development is to keeping the package up to date when the user commands it. Sometimes you do not want to update versions for consistency across teams a package can be "locked" in a certain version.</li> 
-            </Essay>
             
-        </div>
+            
+        </HomeworkStyled>
     );
 }
 
 export default Homework; 
+
+const HomeworkStyled = styled.div`
+    h2 {
+        margin-left: 25%;
+        margin-right: 25%;
+        color: seagreen;
+    }
+    
+`;

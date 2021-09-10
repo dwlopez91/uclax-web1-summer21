@@ -14,7 +14,7 @@ const StaffMember = ({member}) => {
         return (
             <div>
                 <img src={ member.image} alt= {member.name} />
-                <h3> {member.name} </h3>
+                <h3> {member.name}{':'} {member.title}</h3>
             </div>
         )
     }
@@ -24,7 +24,7 @@ const StaffMember = ({member}) => {
     return (
         <StaffMemberStyled className='StaffMember'>
             <Lightbox LightboxContent={ LightboxContent } width={ width}>
-                 <img src={member.image} alt={ member.name} />        
+                <img src={member.image} alt={ member.name} />        
                 <h3>{member.name}</h3>
             </Lightbox>
         </StaffMemberStyled>
@@ -38,14 +38,16 @@ const StaffMemberStyled = styled.div`
     img {
         display: block;
         width: 100%;
+        border: white;
     }
 
     h3 {
         margin: 0px; 
-        color: white; 
-        background-color: maroon; 
+        color: teal; 
+        background-color: white; 
         padding: 5px;
 
     }
+
     
 `;

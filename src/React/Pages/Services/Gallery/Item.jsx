@@ -32,11 +32,12 @@ export default Item;
 
 const ItemStyled = styled.div`
     img {
-        width: 100%;
+        max-width: 350px;
+        height: 275px;
         display: block;
     }
     h3 {
-        background-color: teal;
+        background-color: coral;
         color: white;
         padding: 5px;
         font-size: 18px;

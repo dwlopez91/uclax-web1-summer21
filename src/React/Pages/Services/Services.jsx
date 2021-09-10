@@ -16,5 +16,8 @@ const Services = () => {
 export default Services;
 
 const ServicesStyled = styled.div`
+    h1 {
+        color: green;
     
+    }
 `;

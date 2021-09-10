@@ -30,13 +30,12 @@ const App = () => {
 export default App;
 
 const AppStyled = styled.div`
-    .inset-container {
+    /* .inset-container {
         max-width: 1600px;
         border: solid 1px red;
 
         margin-right: auto;
         margin-left: auto;
-
-
-    }
+    } */
+    
 `;

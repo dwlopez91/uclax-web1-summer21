@@ -11,8 +11,8 @@ const Tabbed = () => {
 
   const [chosenTab, chosenTabUpdate] = useState(tabbedData[0]);
 
-  console.log('tabbedData', tabbedData); 
-  console.log("chosenTab", chosenTab);
+  // console.log('tabbedData', tabbedData); 
+  // console.log("chosenTab", chosenTab);
 
     return (
         <TabbedStyled className='Tabbed'>
@@ -33,5 +33,5 @@ const Tabbed = () => {
 export default Tabbed;
 
 const TabbedStyled = styled.div`
-    
+    padding-top: 30px;
 `;

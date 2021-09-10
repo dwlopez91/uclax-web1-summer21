@@ -9,24 +9,24 @@ const Nav = () => {
                 <NavLink to="/services">Services</NavLink>
                 <NavLink to="/contact">contact</NavLink>
                 <NavLink to="/login">Login</NavLink>
-                <NavLink to="/homework">Homework</NavLink>
+                <NavLink to="/education">Education</NavLink>
 
-           </NavStyled>
+            </NavStyled>
 }
 
 export default Nav;
 
 const NavStyled = styled.nav`
-    background-color: #005050;
+    background-color: whitesmoke;
     color: white;
-    padding: 10px; 
+    padding-bottom: 20px; 
     text-align: center;
 
     a {
         display: block;
-        background-color: teal; 
+        background-color: #bee5b0; 
         
-        color: white; 
+        color: gray; 
         padding: 10px; 
         border-radius: 5px;
         margin: 5px 0px;
@@ -35,13 +35,13 @@ const NavStyled = styled.nav`
         text-transform: uppercase;
 
         &:hover {
-            color: teal; 
+            color: gray; 
             background-color: white;
         }
 
         &.active {
-            background-color: aqua;
-            color: teal;  
+            background-color: #a7c99b;;
+            color: white;  
 
         }
 

@@ -18,7 +18,7 @@ const Light = ({showLightUpdate, children, width}) => {
         <LightStyled className='Light' onClick={ handleClick } w={ width }>
             <CloseButton onClick={ handleClose } />
             { useMemo(() => children, [width]) }
-             
+        
         </LightStyled>
     );
 }
@@ -29,7 +29,7 @@ const LightStyled = styled.div`
 
     position: absolute; 
 
-    background-color: #fff;
+    background-color:'';
 
     width: ${
         ({w}) => {

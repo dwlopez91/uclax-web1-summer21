@@ -11,20 +11,20 @@ const Slideshow = () => {
 
     return (
         <SlideshowStyled className='Slideshow'>
-            <Carousel
-                showThumbs={ false }
-                showIndicators={ false }
-                autoPlay={ true }
-                infiniteLoop={ true }
-                showArrows={ true }
-            >
+                <Carousel
+                    showThumbs={ true }
+                    showIndicators={ false }
+                    autoPlay={ false }
+                    infiniteLoop={ true }
+                    showArrows={ true }
+                >
 
-                { 
-                    slidesData.map((slide, idx) => {
-                        return <Slide slide= { slide } key={ idx } />
-                    }) 
-                }            
-                </Carousel> 
+                    { 
+                        slidesData.map((slide, idx) => {
+                            return <Slide slide= { slide } key={ idx } />
+                        }) 
+                    }            
+                </Carousel>
         </SlideshowStyled>
     );
 }
@@ -32,10 +32,15 @@ const Slideshow = () => {
 export default Slideshow;
 
 const SlideshowStyled = styled.div`
-    margin-bottom: 50px;
+    margin: auto;
+    width: 45%;
+    padding-bottom: 20px;
+    
 
     .carousel .slide .legend {
-            background-color: red;
+            background-color: white;
+            color: gray;
+            font-size: 26px;
         }
 
     

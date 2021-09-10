@@ -3,15 +3,15 @@ import styled from 'styled-components';
 
 import { mediaQueries } from 'common/mediaQueries/mediaQueries.js';
 
-import Info from './Info/Info.jsx';
+// import Info from './Info/Info.jsx';
 import ContactForm from './ContactForm/ContactForm.jsx';
-import Map from './Map/Map.jsx';
+// import Map from './Map/Map.jsx';
 
 const Contact = () => {
 
     return (
         <ContactStyled className='Contact'>
-            <h1> Contact Page </h1>
+            <h1>Contact Page </h1>
             <div className='row'>
                 <div className='col'>
                     <Info />
@@ -31,14 +31,22 @@ export default Contact;
 
 const ContactStyled = styled.div`
 
-    @media ${mediaQueries.mdUp} {
-    .row {
-        display: flex;
+    h1 {
+        color: green;
+        margin-left: 10px;
+        padding-bottom: 50px;
+        
+    }
 
-        .col {
-            flex: 1;
+
+    @media ${mediaQueries.mdUp} {
+        .row {
+            display: flex;
+
+            .col {
+                flex: 2;
+            }
         }
-      }
     }
 
 /* 
