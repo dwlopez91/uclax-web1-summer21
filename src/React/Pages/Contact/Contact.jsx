@@ -14,14 +14,14 @@ const Contact = () => {
             <h1>Contact Page </h1>
             <div className='row'>
                 <div className='col'>
-                    <Info />
+                    {/* <Info /> */}
                 </div>
                 <div className='col'>
                     <ContactForm />
                 </div>
             </div>
             
-            <Map />
+            {/* <Map /> */}
 
         </ContactStyled>
     );
